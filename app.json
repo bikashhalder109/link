@@ -33,6 +33,6 @@
         {
             "url": "heroku/python"
         }
-    ]
+    ],
     "stack": "container"
 }
