@@ -1,4 +1,4 @@
-
+# Code Owner Bikash Halder Or Aditya Halder 
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -52,7 +52,7 @@ async def get_link_private(client, message):
             local_path = await message.download(location, progress=progress)
             await text.edit_text("♥ 𝐁𝐠𝐭 𝐁𝐨𝐭 𝐍𝐨𝐰 📤 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐭𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡..")
             upload_path = upload_file(local_path) 
-            await text.edit_text(f"**🥀 𝐘𝐨𝐮𝐫 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡 𝐋𝐢𝐧𝐤 𝐈𝐬 𝐇𝐞𝐫𝐞 𝐓𝐚𝐩 𝐓𝐡𝐢𝐬 𝐋𝐢𝐧𝐤 𝐓𝐨 𝐂𝐨𝐩𝐲**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n[𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/Bgt_Chat)\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{https://t.me/BikashGadgetsTech)\n[𝐂𝐫𝐞𝐚𝐭𝐨𝐫](https://t.me/BikashHalder)")     
+            await text.edit_text(f"**🥀 𝐘𝐨𝐮𝐫 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡 𝐋𝐢𝐧𝐤 𝐈𝐬 𝐇𝐞𝐫𝐞 𝐓𝐚𝐩 𝐓𝐡𝐢𝐬 𝐋𝐢𝐧𝐤 𝐓𝐨 𝐂𝐨𝐩𝐲**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n[𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/Bgt_Chat)\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{https://t.me/BikashGadgetsTech)\n[𝐂𝐫𝐞𝐚𝐭𝐨𝐫](https://t.me/BikashHalder) .." )    
             os.remove(local_path) 
         except Exception as e:
             await text.edit_text(f"**❌ 𝐅𝐢𝐥𝐞 𝐔𝐩𝐥𝐨𝐚𝐝 𝐈 𝐅𝐚𝐢𝐥𝐞𝐝**\n\n<i>**𝐑𝐞𝐚𝐬𝐨𝐧**: {e}</i>")
@@ -72,7 +72,7 @@ async def get_link_group(client, message):
             local_path = await message.reply_to_message.download(location, progress=progress)
             await text.edit_text("♥ 𝐁𝐠𝐭 𝐁𝐨𝐭 𝐍𝐨𝐰 📤 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐭𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡...")
             upload_path = upload_file(local_path) 
-            await text.edit_text(f"**🥀 𝐘𝐨𝐮𝐫 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡 𝐋𝐢𝐧𝐤 𝐈𝐬 𝐇𝐞𝐫𝐞 𝐓𝐚𝐩 𝐓𝐡𝐢𝐬 𝐋𝐢𝐧𝐤 𝐓𝐨 𝐂𝐨𝐩𝐲**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n[𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/Bgt_Chat)\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{https://t.me/BikashGadgetsTech)\n[𝐂𝐫𝐞𝐚𝐭𝐨𝐫](https://t.me/BikashHalder)")     
+            await text.edit_text(f"**🥀 𝐘𝐨𝐮𝐫 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐩𝐡 𝐋𝐢𝐧𝐤 𝐈𝐬 𝐇𝐞𝐫𝐞 𝐓𝐚𝐩 𝐓𝐡𝐢𝐬 𝐋𝐢𝐧𝐤 𝐓𝐨 𝐂𝐨𝐩𝐲**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n[𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/Bgt_Chat)\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{https://t.me/BikashGadgetsTech)\n[𝐂𝐫𝐞𝐚𝐭𝐨𝐫](https://t.me/BikashHalder)..")     
             os.remove(local_path) 
         except Exception as e:
             await text.edit_text(f"**❌ 𝐅𝐢𝐥𝐞 𝐔𝐩𝐥𝐨𝐚𝐝 𝐈 𝐅𝐚𝐢𝐥𝐞𝐝**\n\n<i>**𝐑𝐞𝐚𝐬𝐨𝐧**: {e}</i>")
