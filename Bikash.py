@@ -13,11 +13,6 @@ bgt=Client(
     bot_token = os.environ["BOT_TOKEN"]
 )
 
-SUPPORT_CHAT = os.environ["SUPPORT_CHAT"]
-UPDATES_CHNL = os.environ["UPDATES_CHNL"]
-OWNER_USERNAME = os.environ["OWNER_USERNAME"]
-BOT_USERNAME = os.environ["BOT_USERNAME"]
-
 @bgt.on_message(filters.command('start') & filters.private)
 async def start(client: client, message: message):
    await message.reply_photo(
@@ -34,9 +29,9 @@ Media File In This Chat .
 𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞𝐬 : 'jpeg', 'jpg', 'png', 'mp4' and 'gif
 
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ 𝐎𝐰𝐧𝐞𝐫'𝐱𝐃 : [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/{OWNER_USERNAME})
-┣★ 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 » : [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/{UPDATES_CHNL})
-┣★ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 » : [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BikashHalder)
+┣★ 𝐎𝐰𝐧𝐞𝐫'𝐱𝐃 : [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BikashBikash)
+┣★ 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 » : [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/BikashGadgetsTech)
+┣★ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 » : [𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞](https://t.me/Bikashhalder)
 ┗━━━━━━━━━━━━━━━━━┛
 
 💞 𝐉𝐮𝐬𝐭 𝐀𝐝𝐝 𝐌𝐞 » 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 &
@@ -52,11 +47,11 @@ Media File In This Chat .
             ],          
             [
                     InlineKeyboardButton(
-                        "🥀 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🥀", url=f"https://t.me/{SUPPORT_CHAT}")
+                        "🥀 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 🥀", url=f"https://t.me/Bgt_chat")
             ],
             [
                     InlineKeyboardButton(
-                        "➕ ❰ 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ❱ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "➕ ❰ 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ❱ ➕", url=f"https://t.me/Bgtconvertbot?startgroup=true")
             ],
             [
                     InlineKeyboardButton(
