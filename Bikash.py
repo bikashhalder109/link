@@ -14,7 +14,7 @@ bgt=Client(
 )
 
 @bgt.on_message(filters.command('start') & filters.private)
-async def start(client: client, message: message):
+async def start(client,message):
    await message.reply_photo(
         photo=f"https://te.legra.ph/file/f73af9a4ffe130a83d8d2.jpg",
         caption=f"""
